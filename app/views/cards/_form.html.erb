@@ -1,0 +1,69 @@
+<%= form_for(@card) do |f| %>
+  <% if @card.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@card.errors.count, "error") %> prohibited this card from being saved:</h2>
+
+      <ul>
+      <% @card.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :manufacturer %><br>
+    <%= f.text_field :manufacturer %>
+  </div>
+  <div class="field">
+    <%= f.label :last4 %><br>
+    <%= f.text_field :last4 %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.datetime_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :purchase_date %><br>
+    <%= f.text_field :purchase_date %>
+  </div>
+  <div class="field">
+    <%= f.label :load_date %><br>
+    <%= f.text_field :load_date %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br>
+    <%= f.number_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :bonus %><br>
+    <%= f.check_box :bonus %>
+  </div>
+  <div class="field">
+    <%= f.label :card_to %><br>
+    <%= f.text_field :card_to %>
+  </div>
+  <div class="field">
+    <%= f.label :store_purchased %><br>
+    <%= f.text_field :store_purchased %>
+  </div>
+  <div class="field">
+    <%= f.label :fee %><br>
+    <%= f.text_field :fee %>
+  </div>
+  <div class="field">
+    <%= f.label :portal %><br>
+    <%= f.text_field :portal %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br>
+    <%= f.text_area :notes %>
+  </div>
+  <div class="field">
+    <%= f.label :card_from %><br>
+    <%= f.text_field :card_from %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

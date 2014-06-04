@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  amount: 1
+  number: MyString
+  intendee: MyString
+  card_from: MyString
+  card_to: MyString
+  purchase_date: MyString
+  load_date: MyString
+  notes: MyText
+
+two:
+  amount: 1
+  number: MyString
+  intendee: MyString
+  card_from: MyString
+  card_to: MyString
+  purchase_date: MyString
+  load_date: MyString
+  notes: MyText

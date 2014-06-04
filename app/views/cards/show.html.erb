@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Manufacturer:</strong>
+  <%= @card.manufacturer %>
+</p>
+
+<p>
+  <strong>Last4:</strong>
+  <%= @card.last4 %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @card.date %>
+</p>
+
+<p>
+  <strong>Purchase date:</strong>
+  <%= @card.purchase_date %>
+</p>
+
+<p>
+  <strong>Load date:</strong>
+  <%= @card.load_date %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @card.amount %>
+</p>
+
+<p>
+  <strong>Bonus:</strong>
+  <%= @card.bonus %>
+</p>
+
+<p>
+  <strong>Card to:</strong>
+  <%= @card.card_to %>
+</p>
+
+<p>
+  <strong>Store purchased:</strong>
+  <%= @card.store_purchased %>
+</p>
+
+<p>
+  <strong>Fee:</strong>
+  <%= @card.fee %>
+</p>
+
+<p>
+  <strong>Portal:</strong>
+  <%= @card.portal %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @card.notes %>
+</p>
+
+<p>
+  <strong>Card from:</strong>
+  <%= @card.card_from %>
+</p>
+
+<%= link_to 'Edit', edit_card_path(@card) %> |
+<%= link_to 'Back', cards_path %>
